@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import { TodoItem } from './TodoItem'
 
@@ -12,5 +13,5 @@ export const TodoList = (props) => {
 }
 
 TodoList.propTypes = {
-    todos: React.PropTypes.array.isRequired
+    todos: PropTypes.array.isRequired
 }
