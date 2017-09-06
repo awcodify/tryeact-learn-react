@@ -1,17 +1,21 @@
-const baseUrl = 'http://localhost:3131/todos';
+import {getUrl, get, post, put, destroy} from './base.service'
 
 export const loadTodos = () => {
-    return fetch(baseUrl)
-        .then(res => res.json())
+    const url = getUrl('/todos');
+    return get(url)
 }
 
 export const createTodo = (todo) => {
-    return fetch(baseUrl, {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(todo)
-    }).then(res => res.json())
+    const url = getUrl('/todos');
+    return post(url, todo)
+}
+
+export const saveTodo = (todo) => {
+    const url = getUrl(`/todos/${todo.id}`);
+    return put(url, todo)
+}
+
+export const deleteTodo = (id) => {
+    const url = getUrl(`/todos/${id}`);
+    return destroy(url, id)
 }

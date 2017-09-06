@@ -42,22 +42,17 @@
     },
     {
       "id": 8,
-      "name": "save data from a server with fetch",
-      "isCompleted": true
+      "name": "update data from a server with fetch",
+      "isCompleted": false
     },
     {
       "id": 9,
-      "name": "load data from a server with fetch",
+      "name": "delete data from a server with fetch",
       "isCompleted": false
     },
     {
       "id": 10,
       "name": "show temporary messages in react",
-      "isCompleted": false
-    },
-    {
-      "id": 11,
-      "name": "update data from a server with fetch",
       "isCompleted": false
     }
   ]

@@ -19,9 +19,7 @@ This repository is my playground to learn React and improve my javascript skill.
 
 :heavy_check_mark: use react context for manage application state
 
-:heavy_check_mark: load data from a server using fetch [_(Read ES6 Fetch)_](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-
-:heavy_check_mark: save data to a server using fetch
+:heavy_check_mark: create/read/update/delete data from a server using fetch [_(Read ES6 Fetch)_](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
 
 # How to use
