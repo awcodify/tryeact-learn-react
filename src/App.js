@@ -5,19 +5,21 @@ import './App.css';
 import { TodoForm, TodoList, Footer } from './components/todo'
 import { addTodo, generateId, findById, toggleTodo, updateTodo, removeTodo, filterTodos } from './lib/todoHelpers'
 import { pipe, partial } from './lib/utils'
+import { loadTodos } from './services/todo.service'
 
 class App extends Component {
   state = {
-    todos: [
-      { id: 0, name: 'First item', isCompleted: true },
-      { id: 1, name: 'Second item', isCompleted: false },
-      { id: 2, name: 'And this our last item', isCompleted: false }
-    ],
+    todos: [],
     currentTodo: ''
   }
 
   static contextTypes = {
     route: PropTypes.string
+  }
+
+  componentDidMount() {
+    loadTodos()
+      .then(todos => this.setState({todos}))
   }
 
   handleToggle = (id) => {

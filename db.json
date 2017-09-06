@@ -1,0 +1,63 @@
+{
+  "todos": [{
+      "id": 0,
+      "name": "create simple todo application",
+      "isCompleted": true
+    },
+    {
+      "id": 1,
+      "name": "include unit test",
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "name": "change item/list/object/array without mutations ",
+      "isCompleted": true
+    },
+    {
+      "id": 3,
+      "name": "create a partial function",
+      "isCompleted": true
+    },
+    {
+      "id": 4,
+      "name": "handle function composition with pipe function (Let's make our function more readable)",
+      "isCompleted": true
+    },
+    {
+      "id": 5,
+      "name": "use react context for manage application state",
+      "isCompleted": true
+    },
+    {
+      "id": 6,
+      "name": "keep application state in sync with browser history",
+      "isCompleted": true
+    },
+    {
+      "id": 7,
+      "name": "load data from a server with fetch",
+      "isCompleted": true
+    },
+    {
+      "id": 8,
+      "name": "save data from a server with fetch",
+      "isCompleted": true
+    },
+    {
+      "id": 9,
+      "name": "load data from a server with fetch",
+      "isCompleted": false
+    },
+    {
+      "id": 10,
+      "name": "show temporary messages in react",
+      "isCompleted": false
+    },
+    {
+      "id": 11,
+      "name": "update data from a server with fetch",
+      "isCompleted": false
+    }
+  ]
+}
