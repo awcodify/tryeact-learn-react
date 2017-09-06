@@ -63,6 +63,6 @@ test('updateTodo should not mutate the original array', () => {
         { id: 2, name: 'This our new todo', isCompleted: false }
     ]
     const updatedTodo = { id: 1, name: 'Second todo', isCompleted: true }
-    const result = updateTodo(startTodos, updatedTodo);
+    const result = updateTodo(startTodos, updatedTodo)
     expect(result).not.toBe(startTodos)
 })
