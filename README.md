@@ -9,17 +9,20 @@ This repository is my playground to learn React and improve my javascript skill.
 # Current Goal
 :heavy_check_mark: create simple todo application
 
-:heavy_check_mark: [PROGRAMMING] include unit test [_(Why Should We Unit Test?)_](https://gist.github.com/kn9ts/6419026f021e292080b8f1382c30a730)
+:heavy_check_mark: include unit test [_(Why Should We Unit Test?)_](https://gist.github.com/kn9ts/6419026f021e292080b8f1382c30a730)
 
-:heavy_check_mark: [JAVASCRIPT] change item/list/object/array without mutations [_(read about mutations)_](https://medium.com/@fknussel/arrays-objects-and-mutations-6b23348b54aa)
+:heavy_check_mark: change item/list/object/array without mutations [_(read about mutations)_](https://medium.com/@fknussel/arrays-objects-and-mutations-6b23348b54aa)
 
-:heavy_check_mark: [JAVASCRIPT] create a partial function [_(read here)_](http://honyovk.com/articles/partial-functions-javascript/)
+:heavy_check_mark: create a partial function [_(read here)_](http://honyovk.com/articles/partial-functions-javascript/)
 
-:heavy_check_mark: [JAVASCRIPT] handle function composition with pipe function _(Let's make our function more readable)_
+:heavy_check_mark: handle function composition with pipe function _(Let's make our function more readable)_
 
-:heavy_check_mark: [REACT] use react context for manage application state
+:heavy_check_mark: use react context for manage application state
 
-:heavy_check_mark: [REACT] load data from a server with fetch
+:heavy_check_mark: load data from a server using fetch [_(Read ES6 Fetch)_](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
+:heavy_check_mark: save data to a server using fetch
+
 
 # How to use
 * `npm install` or `yarn`

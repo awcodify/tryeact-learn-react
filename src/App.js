@@ -5,7 +5,7 @@ import './App.css';
 import { TodoForm, TodoList, Footer } from './components/todo'
 import { addTodo, generateId, findById, toggleTodo, updateTodo, removeTodo, filterTodos } from './lib/todoHelpers'
 import { pipe, partial } from './lib/utils'
-import { loadTodos } from './services/todo.service'
+import { loadTodos, createTodo } from './services/todo.service'
 
 class App extends Component {
   state = {
@@ -44,6 +44,8 @@ class App extends Component {
       currentTodo: '',
       errorMessage: ''
     })
+    createTodo(newTodo)
+      .then(() => console.log('Todo added'))
   }
 
   handleEmptySubmit = (event) => {
