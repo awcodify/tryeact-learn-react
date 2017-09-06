@@ -1,13 +1,18 @@
-import Proptypes from 'prop-types'
 import React, {Component} from 'react'
+import Proptypes from 'prop-types'
 
 export class Link extends Component {
+    static contextTypes = {
+        route: Proptypes.string,
+        linkHandler: Proptypes.func
+    }
     handleClick = (event) => {
         event.preventDefault()
-        window.history.pushState(null, '', this.props.to)
+        this.context.linkHandler(this.props.to)
     }
     render() {
-        return <a href="#" onClick={this.handleClick}>{this.props.children}</a>
+        const activeClass = this.context.route === this.props.to ? 'active' : ''
+        return <a href="#" className={activeClass} onClick={this.handleClick}>{this.props.children}</a>
     }
 }
 
