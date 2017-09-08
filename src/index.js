@@ -5,8 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import {Router} from './components/router'
 
-ReactDOM.render(
-    <Router><App /></Router>,
+ReactDOM.render(<App />,
     document.getElementById('root')
 );
 registerServiceWorker();

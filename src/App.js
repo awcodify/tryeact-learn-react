@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
-import { Todo } from './page'
+
+import { Wrapper } from './components/common'
+import { Todo, Home } from './page'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>React Todos</h2>
-        </div>
-        <Todo/>
-      </div>
+      <Router>
+        <Wrapper>
+          <Route exact path="/" component={Home}/>
+          <Route path="/todo" component={Todo} />
+        </Wrapper>
+      </Router>
     );
   }
 }
