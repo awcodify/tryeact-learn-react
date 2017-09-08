@@ -62,6 +62,23 @@ li:hover span.delete-item {
   color: green;
 }
 
+.navigation {
+  margin: 10px;
+}
+
+.navigation a {
+  margin: 5px;
+  text-decoration: none;
+}
+
+.navigation a, a:visited {
+  color: blue;
+}
+
+.navigation a.active {
+  text-decoration: underline;
+}
+
 .Footer a {
   padding-left: 2px;
   padding-right: 2px;
