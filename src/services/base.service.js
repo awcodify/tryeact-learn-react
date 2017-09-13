@@ -1,11 +1,11 @@
-const baseUrl = 'http://localhost:3131';
+const baseUrl = 'https://public-api.wordpress.com/rest/v1.1/sites/130680917';
 
 export const getUrl = (path) => {
   return baseUrl + path;
 }
 
 export const get = (url) => {
-  return fetch(url)
+  return cachedFetch(url)
     .then(res => res.json())
 }
 
@@ -30,4 +30,24 @@ export const put = (url, body) => {
 
 export const destroy = (url, body) => {
   return request('DELETE', url)
+}
+
+const cachedFetch = (url) => {
+  let cacheKey = url
+  let cached = sessionStorage.getItem(cacheKey)
+  if (cached !== null) {
+    let response = new Response(new Blob([cached]))
+    return Promise.resolve(response)
+  }
+  return fetch(url).then(response => {
+    if (response.status === 200) {
+      let ct = response.headers.get('Content-Type')
+      if (ct && (ct.match(/application\/json/i) || ct.match(/text\//i))) {
+        response.clone().text().then(content => {
+          sessionStorage.setItem(cacheKey, content)
+        })
+      }
+    }
+    return response
+  })
 }

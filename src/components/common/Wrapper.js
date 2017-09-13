@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
-import './../../App.css';
+import React from 'react'
 
 export const Wrapper = (props) => (
-    <div className="App">
+    <div id="wrapper" className="App">
         {props.children}
     </div>
 )
